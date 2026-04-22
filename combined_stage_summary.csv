@@ -1,0 +1,5 @@
+utsm_stage,critical_stage_name,n,proc_time_mean,exception_mean,sla_mean,ftr_mean,volume_mean,breaks_mean,positive_rate
+1,Application Intake and Validation,17,242.654,33.428,24.671,44.827,2623.294,1255.765,0.529
+2,Offer Preparation and Dispatch,19,54.371,1.224,24.44,72.188,1926.053,531.895,1.0
+3,Customer Response and Callback,19,194.113,42.503,32.769,35.705,1914.579,588.263,0.474
+4,Final Decision and Closure,19,28.021,68.736,24.731,31.26,2327.316,283.263,0.0

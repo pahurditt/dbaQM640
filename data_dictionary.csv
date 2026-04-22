@@ -1,0 +1,26 @@
+variable,definition,type,source
+case_id,"Case identifier (prefixed c12_ for BPIC12, c17_ for BPIC17)",string,Both event logs
+activity,Activity name from the BPM system,string,Event logs
+origin,Sub-process origin (Application / Offer / Workflow),string,Event logs
+lifecycle,Event lifecycle transition,string,Event logs
+ts,Event timestamp in UTC,datetime,Event logs
+era,pre_2012 (BPIC12) or post_2017 (BPIC17),string,Derived
+utsm_stage,Stage identifier (1..4) under unified stage model,integer,Derived
+critical_stage_name,Name of the stage in scope,string,Derived
+month_index,"Sequential month index (1..6 = pre, 7..19 = post)",integer,Derived
+avg_processing_time_hrs,Mean case-level time within stage-month (hours),float,Panel
+exception_rate_pct,Share of cases with an exception activity in that stage-month,float,Panel
+sla_breach_rate_pct,Share of cases whose stage time exceeded the 75th percentile,float,Panel
+first_time_right_rate_pct,Share of cases with no exception and no rework,float,Panel
+transaction_volume,Count of cases touching the stage in the month,integer,Panel
+reconciliation_breaks,Count of cases with within-stage rework,integer,Panel
+intervention_deployed,"1 if era is post_2017 (real system change), else 0",binary,Panel
+pgi_score,Performance Growth Indicator composite score,float,Panel
+pgi_positive_flag,"1 if pgi_score >= median, else 0",binary,Panel
+total_processing_time_hrs,End-to-end case duration across stages (hours),float,Case sample
+n_stages_touched,Distinct stages visited by the case,integer,Case sample
+n_events,Total events recorded for the case,integer,Case sample
+had_rework,1 if any stage shows activity repetition,binary,Case sample
+had_sla_breach,1 if any stage exceeded its SLA threshold,binary,Case sample
+requested_amount,Loan amount requested by the applicant,float,Case sample
+risk_flag,1 if case had any exception or SLA breach (RQ2 target),binary,Case sample

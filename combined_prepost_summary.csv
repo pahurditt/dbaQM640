@@ -1,0 +1,9 @@
+utsm_stage,critical_stage_name,era,n,proc_time_mean,exception_mean,sla_mean,ftr_mean
+1,Application Intake and Validation,post_2017,12,285.777,47.356,28.596,52.471
+1,Application Intake and Validation,pre_2012,5,139.159,0.0,15.251,26.48
+2,Offer Preparation and Dispatch,post_2017,13,52.054,0.957,25.836,72.276
+2,Offer Preparation and Dispatch,pre_2012,6,59.391,1.804,21.415,71.996
+3,Customer Response and Callback,post_2017,13,113.76,48.304,17.816,51.544
+3,Customer Response and Callback,pre_2012,6,368.21,29.934,65.168,1.389
+4,Final Decision and Closure,post_2017,13,23.316,60.997,31.689,39.003
+4,Final Decision and Closure,pre_2012,6,38.217,85.504,9.654,14.483
